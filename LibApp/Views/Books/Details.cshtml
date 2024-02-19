@@ -8,6 +8,9 @@
 <h2>@Model.Title</h2>
 <ul>
     <li>@Model.Genre.Name</li>
-    <li></li>
+    <li>@Model.Author</li>
+    <li>@Model.ReleaseDate</li>
 </ul>
 
+<a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+<a asp-action="Index">Back to List</a>
